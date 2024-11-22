@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create and Display a Variable</title>
+</head>
+<body onload="displayName()">
+  <script>
+    function displayName () {
+      const username = prompt("please enter name:");
+      alert(`Hello ${username}!`);
+      document.write(`<h1>Hello ${username}!</h1>`);
+    }
+  </script>
+</body>
+</html>

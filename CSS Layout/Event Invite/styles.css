@@ -41,8 +41,10 @@ ul {
   width: 100px;
 }
 aside {
-  float: right;
+  margin-left: 300px;
   margin-top: -200px;
+  width: 160px;
+  padding: 10px;
 }
 .name {
   font-weight: bold;
@@ -126,5 +128,7 @@ footer p {
 #time {
   border-right: 2px solid white;
 }
-
+@media screen and (min-width:) {
+  
+}
 

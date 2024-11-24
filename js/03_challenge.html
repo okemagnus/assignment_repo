@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Change a Webpage Color</title>
+  <style>
+    button {
+      margin: 10px;
+      background-color: rgb(236, 132, 132);
+      color: white;
+      border: none;
+      border-radius: 10px; 
+    }
+    h1 {
+      margin: 10px;
+    }
+    p {
+      color:wheat
+    }
+  </style>
+</head>
+<body id="demo">
+  <h1 id="play">Challenge: Change a Webpage Color</h1>
+  <button onclick="colorFunction()">Change color</button>
+  <p id="but"></p>
+  <script>
+    function colorFunction () {
+      document.getElementById("demo").style.backgroundColor = "rgb(0, 153, 255)";
+      document.getElementById("play").style.color = "rgb(236, 132, 132)";
+      document.getElementById("but").innerHTML = "Color Changed!"; 
+    }
+  </script>
+  <!-- Create a function that changes the background color of a page to blue -->
+  <!-- Specifically, when the user clicks on the button, the onClick event handler calls a function.
+  Then the function then executes the statement that changes the background color to blue
+  Commit the new code to GitHub.
+  Share the link to the file on your group slack channel. -->
+</body>
+</html>

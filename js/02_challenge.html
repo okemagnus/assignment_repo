@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Challenge: Grade Calculator</title>
+  <style>
+    body {
+      background-color: antiquewhite;
+    }
+    h1 {
+      background-color: rgb(99, 138, 223);
+      color: white;
+      margin: 25px 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Challenge: Grade Calculator</h1>
+  <script>
+    let grade = 70;
+    function gradeCalculator () {
+      if (grade >= 70 && grade <= 100) {
+        alert("Grade is A!");
+      }else if (grade >= 50 && grade <= 60) {
+        alert("Grade is C!");
+      }else if (grade <= 40 && grade >= 0) {
+        alert("Grade is F!");
+      }else {
+        alert("Sorry this score is not graded!");
+      }
+    }
+    grade = prompt("enter score");
+    gradeCalculator();
+  </script>
+</body>
+</html>

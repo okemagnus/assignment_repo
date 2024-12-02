@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Age Calculator Assignment</title>
+</head>
+<body>
+    <h1>Age Checker</h1>
+      <label for="dob">Select Your Date of Birth:</label><br>
+      <input type="date" id="dob" required><br><br>
+    <!-- </div> -->
+    <button onclick="checkAge()">Check Age</button>
+   <p class="result" id="result"></p>
+
+
+
+  <script>
+    function checkAge() {
+      const dobInput = document.getElementById('dob').value;
+
+      // Ensure a date is selected
+      if (!dobInput) {
+        document.getElementById('result').textContent = 'Please select a valid date.';
+        return;
+      }
+
+      const dob = new Date(dobInput);
+      const year = dob.getFullYear();
+      const month = dob.getMonth() + 1;
+      const day = dob.getDate();
+
+      const today = new Date();
+      let age = today.getFullYear() - year;
+
+      if (
+        today.getMonth() + 1 < month ||
+        (today.getMonth() + 1 === month && today.getDate() < day)
+      ) {
+        age--;
+      }
+
+      // Display the age
+      document.getElementById('result').textContent = `You are ${age} years old.`;
+    }
+  </script>
+  <!-- JS Assignment:
+Build a web page that asks users for their dob and displays the user's age at the click of a button.
+Hint:
+the user should select the age from a date picker and not type it in
+The page should display the age only when a date is picked and a button is clicked.
+Store the year, month, and day in separate variables
+Do not generate the code using AI. -->
+</body>
+</html>
